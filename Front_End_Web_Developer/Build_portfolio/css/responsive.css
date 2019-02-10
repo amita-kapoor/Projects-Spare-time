@@ -1,0 +1,197 @@
+/**************************************
+* Minor breakpoints px: 400, 450, 500
+* Major breakpoints:
+* + 600px - Two columns
+* + 870px - Three columns
+* + 1100px - Max-width and centered
+*
+* PS. Elements are styled in the file
+* style.css. DS.
+**************************************/
+
+/**************************************
+ * Viewport 400px - Minor breakpoint
+ * Viewport 450px - Minor breakpoint
+ * Viewport 500px - Minor breakpoint
+ * ------------------------------------
+ * Add some padding around the main
+ * content and bump up the font size
+ * of the titles.
+ *************************************/
+
+@media screen and (min-width: 400px) {
+  .titles-main {
+    font-size: 36px;
+  }
+  .titles-sub {
+    font-size: 18px;
+  }
+  .books {
+    padding: 0 40px;
+  }
+  .books_title {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .titles-main {
+    font-size: 43px;
+  }
+  .titles-sub {
+    font-size: 20px;
+  }
+  .books {
+    padding: 0 60px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .books {
+    padding: 0 100px;
+  }
+}
+
+/**************************************
+ * Viewport 560px - Major breakpoint
+ * ------------------------------------
+ * Put the logo and header titles next
+ * to each other. Turn the main content
+ * into two columns from one.
+ *************************************/
+
+@media screen and (min-width: 600px) {
+  body {
+    background-image: url(../images/bck.jpg);
+  }
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .logo {
+    background: #fff;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14),
+                0 1px 18px 0 rgba(0, 0, 0, 0.12),
+                0 3px 5px -1px rgba(0, 0, 0, 0.4);
+    left: 20px;
+    padding-top: 6px;
+    position: relative;
+    top: -25px;
+    width: 140px;
+    z-index: 5;
+  }
+  .titles {
+    background: #fff;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14),
+                0 1px 18px 0 rgba(0, 0, 0, 0.12),
+                0 3px 5px -1px rgba(0, 0, 0, 0.4);
+    flex: none;
+    padding: 16px 20px;
+    position: relative;
+    text-align: right;
+    top: 79px;
+    z-index: 5;
+  }
+  .titles-main {
+    line-height: 115%;
+  }
+  .titles-sub {
+    font-size: 20px;
+  }
+  .responsive-image-container {
+    border-top: 0;
+    margin-top: -129px;
+  }
+  .books {
+    padding: 0 20px;
+  }
+  .book {
+    display: flex;
+    width: calc(50% - 10px);
+  }
+  .books_list .book:nth-child(odd) {
+    margin-right: 10px;
+  }
+  .books_list .book:nth-child(even) {
+    margin-left: 10px;
+  }
+}
+
+/**************************************
+ * Viewport 870px - Major breakpoint
+ * ------------------------------------
+ * Turn the main content into three
+ * columns from two. Turn the footer
+ * content into two columns.
+ *************************************/
+
+@media screen and (min-width: 870px) {
+  .book {
+    display: flex;
+    margin: 0 20px 0 0;
+    width: calc((100% / 3) - (40px / 3 ));
+  }
+  /*
+   * first-child and not last-child
+   * since they are rendered in the
+   * reverse order
+   */
+  .books_list .book:first-child {
+    margin-right: 0;
+  }
+  .footer {
+    display: flex;
+  }
+  .social {
+    justify-content: flex-end;
+    margin-right: 20px;
+    order: 2;
+    width: 40%;
+  }
+  .social-icon {
+    max-height: 44px;
+  }
+  .copyright {
+    margin: 0 40px;
+    order: 1;
+    padding: 20px 0;
+    text-align: center;
+    width: 60%;
+  }
+}
+
+/**************************************
+ * Viewport 1100px - Major breakpoint
+ * ------------------------------------
+ * Cap the content size and center it
+ * on the page. Also make sure the
+ * main content align properly with the
+ * rest by removing it's padding.
+ *************************************/
+
+@media screen and (min-width: 1100px) {
+  .header,
+  .main {
+    margin: 0 auto;
+    max-width: 1100px;
+  }
+  .books {
+    padding: 0;
+  }
+  .footer {
+    justify-content: center;
+  }
+  .social {
+    justify-content: flex-end;
+    margin: 0;
+    width: 550px;
+  }
+  .copyright {
+    margin: 0;
+    width: 550px;
+  }
+}
