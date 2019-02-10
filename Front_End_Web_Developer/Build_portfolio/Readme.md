@@ -28,3 +28,8 @@ And a JavaScript polyfill named [PictureFill](http://scottjehl.github.io/picture
 ### Footer
 The Footer contains social media links and licensing information.
 
+##### Citations
+* The borg cube is from the screenshot of Star Trek Series.
+* The logo is self made.
+* The images of the books again screenshot from their Ebook version
+* The background abstract is taken from pixabay.com 
