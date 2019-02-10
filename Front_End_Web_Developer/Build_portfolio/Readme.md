@@ -33,3 +33,4 @@ The Footer contains social media links and licensing information.
 * The logo is self made.
 * The images of the books again screenshot from their Ebook version
 * The background abstract is taken from pixabay.com 
+* Learned a lot from this [project](https://github.com/gjarnling/udacity-build-a-portfolio-site)
