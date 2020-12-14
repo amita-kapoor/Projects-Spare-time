@@ -1,5 +1,8 @@
-# Udacity Nanodegrees
-Projects done in the Nanodegrees under Udacity Pro 1 year
+Projects done in my spare time. Some are belong to Udacity NDs, others, just out of interest.
+
+### GAN Training
+* [GAN with different learning for Generator and discriminator]()
+
 
 ### Machine Learning Engineer
 
